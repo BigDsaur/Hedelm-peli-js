@@ -9,10 +9,6 @@ body {
     background-color: #f0f0f0;
 }
 
-h3 {
-    text-align: center;
-}
-
 .slot-machine {
     background-color: #fff;
     padding: 20px;
@@ -24,7 +20,20 @@ h3 {
 
 #slots {
     margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#slots div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#slots span {
     font-size: 40px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -32,6 +41,17 @@ button {
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+}
+
+.lockButton {
+    background-color: #f0ad4e;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.lockButton.locked {
+    background-color: #d9534f;
 }
 
 button:disabled {
@@ -57,6 +77,7 @@ button:disabled {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
+    text-align: center;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
