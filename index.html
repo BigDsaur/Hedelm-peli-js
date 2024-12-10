@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Slot Machine Game</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<div class="slot-machine">
-    <div>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="slot-machine">
+      <div>
         <label for="betAmount">Bet Amount:</label>
         <select id="betAmount">
-            <option value="1">1$</option>
-            <option value="3">3$</option>
-            <option value="5">5$</option>
+          <option value="1">1$</option>
+          <option value="3">3$</option>
+          <option value="5">5$</option>
         </select>
         <button id="spinButton">Spin</button>
         <button id="infoButton">Info</button>
+      </div>
+
+      <div id="slots">
+        <div>
+          <span id="slot1">🍒</span>
+          <button class="lockButton" data-slot="1">Lock</button>
+        </div>
+        <div>
+          <span id="slot2">🍒</span>
+          <button class="lockButton" data-slot="2">Lock</button>
+        </div>
+        <div>
+          <span id="slot3">🍒</span>
+          <button class="lockButton" data-slot="3">Lock</button>
+        </div>
+        <div>
+          <span id="slot4">🍒</span>
+          <button class="lockButton" data-slot="4">Lock</button>
+        </div>
+      </div>
+
+      <div id="result"></div>
+      <div>Money: <span id="money">100</span>$</div>
     </div>
 
-    <div id="slots">
-        <div>
-            <span id="slot1">🍒</span>
-            <button class="lockButton" data-slot="1">Lock</button>
-        </div>
-        <div>
-            <span id="slot2">🍒</span>
-            <button class="lockButton" data-slot="2">Lock</button>
-        </div>
-        <div>
-            <span id="slot3">🍒</span>
-            <button class="lockButton" data-slot="3">Lock</button>
-        </div>
-        <div>
-            <span id="slot4">🍒</span>
-            <button class="lockButton" data-slot="4">Lock</button>
-        </div>
-    </div>
-
-    <div id="result"></div>
-    <div>Money: <span id="money">100</span>$</div>
-</div>
-
-<!-- Info Popup -->
-<div id="infoPopup" class="popup hidden">
-    <div class="popup-content">
+    <!-- Info Popup -->
+    <div id="infoPopup" class="popup hidden">
+      <div class="popup-content">
         <h3>Payout Rules</h3>
         <ul>
-            <li>🍇🍉 Four Watermelons or Grapes: <strong>10x Bet</strong></li>
-            <li>Four of Any Other Symbol: <strong>5x Bet</strong></li>
-            <li>Three of Any Symbol: <strong>3x Bet</strong></li>
+          <li>🍇🍇🍇🍇 / 🍉🍉🍉🍉<strong>: 10x Bet</strong></li>
+          <li>🍒🍒🍒🍒 / 🍊🍊🍊🍊<strong>: 5x Bet</strong></li>
+          <li>🍆🍆🍆🍆 / 🍓🍓🍓🍓<strong>: 5x Bet</strong></li>
+          <li>🍇🍇🍇 / 🍉🍉🍉<strong>: 5x Bet</strong></li>
+          <li>🍒🍒🍒 / 🍊🍊🍊<strong>: 3x Bet</strong></li>
+          <li>🍆🍆🍆 / 🍓🍓🍓<strong>: 3x Bet</strong></li>
         </ul>
         <button id="closePopupButton">Close</button>
+      </div>
     </div>
-</div>
 
-<script src="slots.js"></script>
-</body>
+    <script src="slots.js"></script>
+  </body>
 </html>
