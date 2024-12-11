@@ -6,23 +6,25 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background-color: #dbb5ff;
 }
 
 .slot-machine {
     background-color: #fff;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+    width: 40vw;
+    height: 70vh;
+    padding: 100px;
+    border: 3px solid #00ff4c;
+    border-radius: 250px;
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.849);
 }
 
 #slots {
-    margin: 20px 0;
+    margin: 100px 0;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
 }
 
 #slots div {
@@ -32,26 +34,27 @@ body {
 }
 
 #slots span {
-    font-size: 40px;
+    font-size: 100px;
     margin-bottom: 10px;
 }
 
 button {
     margin: 10px 5px;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 50px;
     cursor: pointer;
 }
 
 .lockButton {
-    background-color: #f0ad4e;
+    background-color: #2acc68;
     border: none;
-    color: white;
+    color: rgb(7, 0, 0);
     border-radius: 5px;
+    box-shadow: 0 0 12px rgba(255, 0, 255, 0.849);
 }
 
 .lockButton.locked {
-    background-color: #d9534f;
+    background-color: #ff453f;
 }
 
 button:disabled {
@@ -59,14 +62,11 @@ button:disabled {
     cursor: not-allowed;
 }
 
-/* Popup Styling */
 .popup {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.75);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,12 +75,39 @@ button:disabled {
 
 .popup-content {
     background-color: white;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 100px;
+    border-radius: 250px;
     text-align: left;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 4px solid #00fff24d;
+    box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 
 .hidden {
     display: none;
+}
+
+ul {
+    font-size: 45px;
+}
+
+label {
+    font-size: 40px;
+}
+
+h3 {
+    color: gold;
+    font-size: 45px;
+    text-align: center;
+    margin: 10px;
+}
+
+select {
+    width: 60px;
+    height: 50px;
+    font-size: 25px;
+}
+
+result.textContent {
+    font-size: 45px;
+    color: gold;
 }

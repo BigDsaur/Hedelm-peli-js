@@ -54,7 +54,7 @@ document.querySelectorAll(".lockButton").forEach((button) => {
         lockedSlots[slotNum] = !lockedSlots[slotNum];
 
         button.classList.toggle("locked", lockedSlots[slotNum]);
-        button.textContent = lockedSlots[slotNum] ? "Unlock" : "Lock";
+/*         button.textContent = lockedSlots[slotNum] ? "Unlock" : "Lock"; */
     });
 });
 
@@ -150,7 +150,7 @@ function updateMoneyDisplay() {
 function disableSpinButton() {
     const spinButton = document.getElementById("spinButton");
     spinButton.disabled = true;
-    spinButton.textContent = "Out of Money!";
+    spinButton.textContent = "OUT";
 }
 
 // Randomize slots when the page loads

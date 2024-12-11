@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Slot Machine Game</title>
+    <title>Hedelmä peli</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="slot-machine">
       <div>
-        <label for="betAmount">Bet Amount:</label>
+        <h3>Money <span id="money">100</span>$</h3>
+        <label for="betAmount">Bet </label>
         <select id="betAmount">
           <option value="1">1$</option>
           <option value="3">3$</option>
@@ -39,7 +40,6 @@
       </div>
 
       <div id="result"></div>
-      <div>Money: <span id="money">100</span>$</div>
     </div>
 
     <!-- Info Popup -->
