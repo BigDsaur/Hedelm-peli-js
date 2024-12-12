@@ -107,7 +107,7 @@ select {
     font-size: 25px;
 }
 
-result.textContent {
-    font-size: 45px;
-    color: gold;
+#result{
+    font-size: 30px;
+    color: rgb(0, 102, 255);
 }
